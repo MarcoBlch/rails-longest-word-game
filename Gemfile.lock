@@ -103,6 +103,7 @@ GEM
     debug (1.10.0)
       irb (~> 1.10)
       reline (>= 0.3.8)
+    dictionary (1.0.0)
     drb (2.2.1)
     erubi (1.13.1)
     globalid (1.2.1)
@@ -278,6 +279,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  dictionary
   importmap-rails
   jbuilder
   puma (>= 5.0)

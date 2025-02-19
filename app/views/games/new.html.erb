@@ -1,0 +1,15 @@
+<h1>Welcome to the longest word-game!</h1>
+  <p>Here is your grid:</p>
+
+    <%= @letters =%>
+
+
+<h2> What's your best shot? </h2>
+
+  <form action="/score" method="POST" data-turbo="false">
+  <input type="text" name="word" placeholder="Enter your word">
+  <input type="submit" value="Submit">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <%= hidden_field_tag :letters, @letters.join(' ') %>
+  <%= hidden_field_tag :start_time, @start_time %>
+</form>

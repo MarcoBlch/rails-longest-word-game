@@ -7,4 +7,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  get "/new", to: "games#new"
+  post "/score", to: "games#score"
+  get '/', to: 'games#new', as: :new_game
 end
